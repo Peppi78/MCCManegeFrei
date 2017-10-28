@@ -1,0 +1,23 @@
+﻿@page
+@model GalleryModel
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+
+@{ Html.RenderPartial("02_Gallery/_01_Gallery01.cshtml", Model); }
+
+
+@section NaviBar
+    {
+
+    <li><a asp-page="/Index">Home</a></li>
+
+   <!--
+    <li><a class="onepage" href="#about">About Us</a></li>
+    <li><a class="onepage" href="#services">Services</a></li>
+    <li><a class="onepage" href="#gallery">Gallery</a></li>
+    <li><a class="onepage" href="#team">Team</a></li>
+    <li><a class="onepage" href="#contact">Get In Touch</a></li>
+        --> 
+}
