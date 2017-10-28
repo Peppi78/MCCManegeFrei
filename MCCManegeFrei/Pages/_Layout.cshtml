@@ -1,71 +1,270 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MCCManegeFrei</title>
+    <title>MCC Manege frei - @ViewData["Title"] </title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+    <environment include="Development">       
+        <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="~/css/font-materialdesign.css" />
+        <link rel="stylesheet" href="~/css/animate.min.css"  />
+        <link rel="stylesheet" href="~/css/settings.css" />
+        <link rel="stylesheet" href="~/css/owl.carousel.css" />
+        <link rel="stylesheet" href="~/css/owl.theme.css" />
+        <link rel="stylesheet" href="~/css/owl.transitions.css" />
+        <link rel="stylesheet" href="~/css/magnific-popup.css" />
+        <link rel="stylesheet" href="~/css/prettyPhoto.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
+        <link rel="stylesheet" href="~/css/custom.css" />
+        <link rel="stylesheet" href="~/css/style-business.css" />
+        <link rel="stylesheet" href="~/css/colors/red.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CLibre+Baskerville:400,400i,700" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+
+        <link rel="stylesheet" href="~/css/bootstrap.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/font-awesome.min.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/font-materialdesign.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/animate.min.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/settings.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/owl.carousel.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/owl.theme.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/owl.transitions.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/magnific-popup.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/prettyPhoto.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/css/style-business.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/colors/red.css" asp-append-version="true" />
+        <link rel="stylesheet" asp-append-version="true" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CLibre+Baskerville:400,400i,700" />
+
+
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">MCCManegeFrei</a>
+    
+
+ 
+   
+    <div class="noo-spinner">
+        <div class="noo-spinner-inner">
+            <img src="images/preloader/default.svg" width="150" alt="" />
+        </div>
+    </div>
+    <div id="body_hider" class="hider_flag"></div>
+    <div id="body_hider_full" class="hider_flag"></div>
+    <div class="hidden-bar">
+        <div class="hidden-bar-inner">
+            <div id="hidden-bar-logo">
+                <a href="#"><img src="images/logo_hidden_bar.png" alt="" /></a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
-                </ul>
+            <div id="hidden-bar-mobile-logo">
+                <a href="#"><img src="images/logo_alt.png" alt="" /></a>
+            </div>
+            <div class="widget mb-5 text-center">
+                <p>River Street, Blue Building, 1st. floor</p>
+                <p>5690-970 New york City</p>
+            </div>
+            <div class="mobile-menu uppercase"></div>
+            <div class="widget show-mobile mb-2 text-center">
+                <h3 class="white uppercase fz-20 os-font mb-1">Mailing List</h3>
+                <p>Subscribe and stay updated with the latest news from us. We never spam!</p>
+            </div>
+            <div class="widget show-mobile text-center">
+                <form>
+                    <div class="clearfix">
+                        <div class="form-signup-row">
+                            <label>First Name:</label>
+                            <input type="text" name="name" id="hidden-name" class="highlighted" />
+                        </div>
+                        <div class="form-signup-row">
+                            <label>Email:</label>
+                            <input type="text" name="email" id="hidden-email" class="highlighted" />
+                        </div>
+                        <div class="form-signup-row">
+                            <input type="submit" class="btn btn-color uppercase" id="signup_submit" value="Sign Up" />
+                        </div>
+                    </div>
+                    <!-- /mc_form_inside -->
+                </form>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - MCCManegeFrei</p>
-        </footer>
+        <div class="hidden-bar-footer text-center">
+            <div class="widget mb-0 show-mobile sidebar-social-widget">
+                <div class="widget-inner">
+                    <div class="widget-title fw-600 white uppercase os-font">
+                        Get Connected
+                    </div>
+                    <div class="fount-social minimal">
+                        <div class="fount-social-inner">
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-behance">
+                                <a href="#" target="_blank">
+                                    <span class="fount-behance fa fa-behance"></span>
+                                    <span class="bg-shifter"><i class="fa fa-behance"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-dribbble">
+                                <a href="#" target="_blank">
+                                    <span class="fount-dribbble fa fa-dribbble"></span>
+                                    <span class="bg-shifter"><i class="fa fa-dribbble"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-facebook">
+                                <a href="#" target="_blank">
+                                    <span class="fount-facebook fa fa-facebook"></span>
+                                    <span class="bg-shifter"><i class="fa fa-facebook"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-instagram">
+                                <a href="#" target="_blank">
+                                    <span class="fount-instagram fa fa-instagram"></span>
+                                    <span class="bg-shifter"><i class="fa fa-instagram"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-pinterest">
+                                <a href="#" target="_blank">
+                                    <span class="fount-pinterest fa fa-pinterest"></span>
+                                    <span class="bg-shifter"><i class="fa fa-pinterest"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-img-wrp fount-socialink prk_bordered fount-soundcloud">
+                                <a href="#" target="_blank">
+                                    <span class="fount-soundcloud fa fa-soundcloud"></span>
+                                    <span class="bg-shifter"><i class="fa fa-soundcloud"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget show-mobile">
+                <div class="widget-inner">
+                    <span class="fz-11">2016 - All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site">
+        <header class="header header-transparent">
+            <div class="header-inner">
+                <div class="header-main">
+                    <div class="btn-navbar hidden" data-target=".main-nav"></div>
+                    <div id="logo">
+                        <div id="logo-before">
+                            <a href="http://www.mcc-ober-moerlen.de/" target="_blank"><img src="images/logo.png" alt="" /></a>
+                        </div>
+                        <div id="logo-after">
+                            <a href="http://www.mcc-ober-moerlen.de/" target="_blank"><img src="images/logo_alt.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="side-menu">
+                        <div class="sidebar-trigger hidden-bar-toggle">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </div>
+                    <div class="main-menu">
+
+                        <div class="main-menu-inner">
+                            <ul class="main-nav os-font" data-offset="66">
+                                @RenderSection("NaviBar", required: false)
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+
+            @RenderBody()
+            <hr />
+          </div>
     </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+    <div class="go-to-top">
+        <div class="arrows">
+            <i class="fa fa-angle-up"></i>
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </div>
+            <environment include="Development">
 
-    @RenderSection("Scripts", required: false)
+                <script src="~/js/jquery.min.js"></script>
+                <script src="~/js/jquery-migrate.min.js"></script>
+                <script src="~/js/bootstrap.min.js"></script>
+                <script src="~/js/jquery.singlePageNav.js"></script>
+                <script src="~/js/modernizr-2.7.1.min.js"></script>
+                <script src="~/js/classie.js"></script>
+                <script src="~/js/owl.carousel.min.js"></script>
+                <script src="~/js/imagesloaded.pkgd.min.js"></script>
+                <script src="~/js/isotope.pkgd.min.js"></script>
+                <script src="~/js/jquery.isotope.init.js"></script>
+                <script src="~/js/jquery.countTo.js"></script>
+                <script src="~/js/bootstrap-progressbar.min.js"></script>
+                <script src="~/js/jquery.equalheights.min.js"></script>
+                <script src="~/js/jquery.magnific-popup.min.js"></script>
+                <script src="~/js/jquery.prettyPhoto.js"></script>
+                <script src="~/js/off-cavnas.js"></script>
+                <script type="text/javascript" src="~/js/waypoints.min.js"></script>
+                <script type="text/javascript" src="~/js/wow.min.js"></script>
+                <script src="~/js/functions.js"></script>
+                <script src="~/js/script.js"></script>
+
+                <script src="~/js/jquery.themepunch.tools.min.js"></script>
+                <script src="~/js/jquery.themepunch.revolution.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.video.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.slideanims.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.actions.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.layeranimation.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.kenburn.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.navigation.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.migration.min.js"></script>
+                <script src="~/js/extensions/revolution.extension.parallax.min.js"></script>
+
+            </environment>
+            <environment exclude="Development">
+
+
+
+                <script src="~/js/jquery.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery-migrate.min.js" asp-append-version="true"></script>
+                <script src="~/js/bootstrap.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.singlePageNav.js" asp-append-version="true"></script>
+                <script src="~/js/modernizr-2.7.1.min.js" asp-append-version="true"></script>
+                <script src="~/js/classie.js" asp-append-version="true"></script>
+                <script src="~/js/owl.carousel.min.js" asp-append-version="true"></script>
+                <script src="~/js/imagesloaded.pkgd.min.js" asp-append-version="true"></script>
+                <script src="~/js/isotope.pkgd.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.isotope.init.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.countTo.js" asp-append-version="true"></script>
+                <script src="~/js/bootstrap-progressbar.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.equalheights.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.magnific-popup.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.prettyPhoto.js" asp-append-version="true"></script>
+                <script src="~/js/off-cavnas.js" asp-append-version="true"></script>
+                <script src="~/js/waypoints.min.js" asp-append-version="true"></script>
+                <script src="~/js/wow.min.js" asp-append-version="true"></script>
+                <script src="~/js/functions.js" asp-append-version="true"></script>
+                <script src="~/js/script.js" asp-append-version="true"></script>
+
+                <script src="~/js/jquery.themepunch.tools.min.js" asp-append-version="true"></script>
+                <script src="~/js/jquery.themepunch.revolution.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.video.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.slideanims.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.actions.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.layeranimation.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.kenburn.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.navigation.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.migration.min.js" asp-append-version="true"></script>
+                <script src="~/js/extensions/revolution.extension.parallax.min.js" asp-append-version="true"></script>
+            </environment>
+
+            @RenderSection("Scripts", required: false)
 </body>
+
 </html>

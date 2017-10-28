@@ -1,0 +1,107 @@
+﻿@page
+@model IndexModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+<div id="fullscreen-banner" class="section">
+    <div class="container-fluid">
+        <div id="rev_slider_wrapper" class="rev_slider_wrapper fullscreen-container">
+            <div id="rev_slider_1" class="rev_slider fullscreenbanner">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="crossfade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 1">
+                        <!-- MAIN IMAGE -->
+                        <!--
+                        <img src="images/slider/01_01_slider_1903x950.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" />
+                        -->
+                        <iframe width="1903" height="950" src="https://youtube.com/embed/MqOcFWaD18o?controls=0&autoplay=1&loop=1&playlist=MqOcFWaD18o"></iframe>
+                        <!-- LAYER NR. 1 -->
+                        <!--<div class="tp-caption caption-1 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['320','320','350','300']" data-fontsize="['32','20','20','15']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:-150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            MCC Ober-Mörlen 2018
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <!--<div class="tp-caption caption-2 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['420','420','410','340']" data-fontsize="['90','80','50','35']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            MANEGE FREI
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <!--<div class="tp-caption button-dark tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['-110','-110','-100','-35']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">Staying Strong</a>
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <!--<div class="tp-caption button-transparent tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['110','110','100','115']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">View Our Work</a>
+                        </div>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="crossfade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 2">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/slider/01_02_slider_1903x950.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" />
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption caption-1 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['320','320','350','300']" data-fontsize="['32','20','20','15']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:-150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            Macht euch gefasst auf neue Attraktionen...
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption caption-2 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['420','420','410','340']" data-fontsize="['90','80','50','35']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            DIE PROBEN SIND IM VOLLEN GANGE
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption button-dark tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['-110','-110','-100','-35']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">Staying Strong</a>
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption button-transparent tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['110','110','100','115']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">View Our Work</a>
+                        </div>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="crossfade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-rotate="0" data-saveperformance="off" data-title="Slide 3">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/slider/01_03_slider_1903x950.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" />
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption caption-1 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['320','320','350','300']" data-fontsize="['32','20','20','15']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:-150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            Die Vorfreude steigt...
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption caption-2 tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['420','420','410','340']" data-fontsize="['90','80','50','35']" data-lineheight="['100','100','100','70']" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-transform_idle="o:1;" data-transform_in="y:150;opacity:0;s:1000;e:Elastic.easeOut;" data-transform_out="y:-50px;opacity:0;s:500;s:500;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            SAGT ES WEITER!!!
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption button-dark tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['-110','-110','-100','-35']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">Staying Strong</a>
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption button-transparent tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['110','110','100','115']" data-y="['top','top','top','top']" data-voffset="['570','570','530','430']" data-fontsize="['20','20','15','12']" data-fontweight="['700','700','700','700']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;" data-start="200" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="5800">
+                            <a href="#">View Our Work</a>
+                        </div>
+                    </li>
+                </ul>
+                <div id="anchor" data-offset="66">
+                    <a href="#about" class="onepage">
+                        <span class="next-arrow">
+                            <i class="fa fa-chevron-down"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="tp-bannertimer tp-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,172 @@
+﻿@page
+@model IndexModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<div id="gallery" class="section section-bg-11 pt-21 pb-15" style="background-image: url(../images/background/bg_1920x800.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div data-wow-delay="0.3s" class="text-center wow fadeInUp">
+                    <h1 class="fw-bolder color mb-2">GALLERY</h1>
+                    <h5 class="fw-normal white">
+                        Hier ein paar Bilder unserer Künstler, Tänzer, Musiker &amp; Artisten.<br />
+                        Ein Vorgeschmack auf dass, was euch in unserer Manege erwartet.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section pb-7">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div data-wow-delay="0.3s" class="portfolio-grid wow fadeIn">
+                    <div class="portfolio-masonry-item text-center col-lg-6 col-md-6 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="images/portfolio/portfolio_960x960.jpg" class="mfp-image gallery-item" data-rel="prettyPhoto[gallery]">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(239, 190, 67, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_960x960.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">Half Layout</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">Branding, Illustrations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-3 col-md-3 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="images/portfolio/portfolio_480x480_Bernd.jpg" class="mfp-image gallery-item" data-rel="prettyPhoto[gallery]">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(43, 188, 174, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_480x480_Bernd.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">Unser Bernd</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">das schwäbische Büttenass</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-3 col-md-3 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="demo-agency-portfolio-detail-custom.html">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(0, 0, 0, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_480x480.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">Custom Layout</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">Branding, Identity</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-6 col-md-6 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="demo-agency-portfolio-detail.html">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(239, 111, 31, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_952x476.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">The Nightcrawler</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">Identity, Illustrations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-3 col-md-3 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="demo-agency-portfolio-detail.html">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(244, 133, 127, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_480x480.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">Sunday Feeling</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">Branding, Illustrations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-6 col-md-6 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="demo-agency-portfolio-detail.html">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(142, 49, 73, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_952x476.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">Windy Morning</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">Digital, Illustrations</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-masonry-item text-center col-lg-3 col-md-3 col-sm-4 col-xs-12 p-0 m-0">
+                        <a href="demo-agency-portfolio-detail.html">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(93, 216, 192, 0.8)"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_480x480_Till.jpg" alt="" />
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="white">der Till</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate white">immer auf dem aktuellen Stand</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center load-more pull-left fullwidth mt-4">
+                    <a href="#" class="btn btn-dark uppercase">Load More Posts</a>
+                    <i class="arrow-down fa fa-chevron-down color"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
