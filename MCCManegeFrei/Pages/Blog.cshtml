@@ -1,0 +1,50 @@
+﻿@page
+@model BlogModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+@{ Html.RenderPartial("03_Blog/_01_Blog01.cshtml", Model); }
+
+<div class="section pt-7 pb-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-grid">
+                    @{ Html.RenderPartial("03_Blog/_01_Blog02.cshtml", Model); }
+                </div>
+                <!--
+                <div class="paginate mt-3 mb-6">
+                    <div class="paginate_links">
+                        <a class="prev page-numbers" href="#">
+                            <i class="fa fa-caret-left"></i>
+                        </a>
+                        <a class="page-numbers" href="#">1</a>
+                        <span class="page-numbers current">2</span>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">6</a>
+                        <a class="next page-numbers" href="#">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>                 
+                </div>
+                    -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section NaviBar
+    {
+
+    <li><a asp-page="/Index">Home</a></li>
+    <li><a asp-page="/Gallery">Gallery</a></li>
+
+    <!--
+     <li><a class="onepage" href="#about">About Us</a></li>
+     <li><a class="onepage" href="#services">Services</a></li>
+     <li><a class="onepage" href="#gallery">Gallery</a></li>
+     <li><a class="onepage" href="#team">Team</a></li>
+     <li><a class="onepage" href="#contact">Get In Touch</a></li>
+         -->
+}

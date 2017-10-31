@@ -1,0 +1,48 @@
+﻿@page
+@model BlogModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<div class="blog-item mb-4 col-sm-4" data-color="rgb(32, 221, 222)">
+    <a href="blog-detail.html">
+        <div class="blog-thumbnail">
+            <div class="blog-overlay" data-color="rgba(32, 221, 222, 0.6)">
+                <i class="fa fa-link white"></i>
+            </div>
+            <img src="images/blog/blog_01_360x225.jpg" alt="" />
+        </div>
+    </a>
+    <h4 class="fw-600 os-font blog-title">
+        <a href="blog-detail.html">Happy Halloween... </a>
+    </h4>
+    <div class="blog-meta">
+        <div class="date">October 31, 2017</div>
+        <div class="blog-divider">-</div>
+        <div class="blog-cate">
+            Kommt zur Eröffnung der Kampagne 2017/2018
+        </div>
+    </div>
+    <div class="blog-content">
+        <p>Am 10.11.2017 hält die 5. Jahresszeit Einzug in Ober-Mörlen. 
+        Gegen 19.30 Uhr wird die Miss Fassenacht an der Usa ausgegraben. 
+        Närrisch feiernd werden zahlreiche MCC'lern, mit musikalischer Unterstützung durch die Roten Husaren, 
+        die Miss Fassenacht zur großen Eröffnungsfeier in der Usatalhalle bringen. 
+        Dieses Spektakel dürft Ihr auf keinen Fall verpassen. 
+        </p>
+        <a class="readmore" href="http://www.mcc-ober-moerlen.de/terminkalender/eventdetail/12/281/eroeffnung-der-kampagne-2017-2018.html">Read More →</a>
+    </div>
+    <div class="blog-footer">
+        <div class="col-md-6 p-0">
+            Mirle Mörlau!
+        </div>
+        <div class="col-md-6 p-0">
+
+        </div>
+    </div>
+</div>
+
+
